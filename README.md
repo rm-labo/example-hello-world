@@ -2,6 +2,12 @@
 
 run consloe.log('Hello World!!')
 
+## install
+
+```
+$ npm i @rm-labo/example-hello-world
+```
+
 ## usage
 
 ```
