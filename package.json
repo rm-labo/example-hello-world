@@ -2,8 +2,10 @@
   "name": "@rm-labo/example-hello-world",
   "version": "1.0.3",
   "description": "hello!",
-  "main": "index.js",
+  "main": "./dist/js/index.js",
   "scripts": {
+    "build": "NODE_ENV=production webpack --mode production",
+    "watch": "NODE_ENV=development webpack --watch --mode development",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -15,5 +17,14 @@
   "bugs": {
     "url": "https://github.com/rm-labo/example-hello-world/issues"
   },
-  "homepage": "https://github.com/rm-labo/example-hello-world#readme"
+  "homepage": "https://github.com/rm-labo/example-hello-world#readme",
+  "devDependencies": {
+    "ts-loader": "^8.0.2",
+    "typescript": "^3.9.7",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12"
+  },
+  "dependencies": {
+    "@types/node": "^14.0.27"
+  }
 }
