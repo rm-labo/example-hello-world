@@ -1,6 +1,6 @@
 {
   "name": "@rm-labo/example-hello-world",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "hello!",
   "main": "./dist/js/index.js",
   "scripts": {
