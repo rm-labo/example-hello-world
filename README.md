@@ -1,4 +1,5 @@
 ![badge](https://img.shields.io/badge/hello-world-blue.svg)
+![badge](https://img.shields.io/badge/license-MIT-blue.svg)
 
 # example-hello-world
 
