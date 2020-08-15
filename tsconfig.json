@@ -1,5 +1,7 @@
 {
   "compilerOptions": {
+    "outDir": "./dist/js",
+    "rootDir": "./src/ts",
     "module": "commonjs",
     "target": "es5",
     "lib": ["es2015", "dom"],
@@ -8,6 +10,9 @@
     "noImplicitAny": true,
     "suppressImplicitAnyIndexErrors": true
   },
+  "include": [
+    "src/ts/**/*"
+  ],
   "exclude": [
     "node_modules"
   ],

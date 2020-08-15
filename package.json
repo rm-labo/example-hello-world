@@ -4,8 +4,8 @@
   "description": "hello!",
   "main": "./dist/js/index.js",
   "scripts": {
-    "build": "NODE_ENV=production webpack --mode production",
-    "watch": "NODE_ENV=development webpack --watch --mode development",
+    "build": "tsc",
+    "watch": "tsc --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -20,11 +20,10 @@
   "homepage": "https://github.com/rm-labo/example-hello-world#readme",
   "devDependencies": {
     "ts-loader": "^8.0.2",
-    "typescript": "^3.9.7",
-    "webpack": "^4.44.1",
-    "webpack-cli": "^3.3.12"
+    "typescript": "^3.9.7"
   },
   "dependencies": {
-    "@types/node": "^14.0.27"
+    "@types/node": "^14.0.27",
+    "core-js": "^3.6.5"
   }
 }

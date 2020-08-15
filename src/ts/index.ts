@@ -1,5 +1,3 @@
-function hello() {
-  console.log('Hello World!!')
-}
-
-export default hello()
+import { hello } from './hello'
+export { hello }
+export default hello
