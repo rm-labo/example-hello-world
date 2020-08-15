@@ -1,3 +1,5 @@
+![badge](https://img.shields.io/badge/hello-world-blue.svg)
+
 # example-hello-world
 
 run consloe.log('Hello World!!')
