@@ -14,7 +14,8 @@
     "src/ts/**/*"
   ],
   "exclude": [
-    "node_modules"
+    "node_modules",
+    "**/*.test.ts"
   ],
   "typeRoots": [
     "node_modules/@types"

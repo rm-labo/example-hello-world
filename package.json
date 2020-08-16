@@ -4,21 +4,36 @@
   "description": "hello!",
   "main": "./dist/js/index.js",
   "scripts": {
+    "prepublish": "npm run test && npm run clean && npm run build",
+    "precommit": "npm run prepublish",
     "build": "tsc",
     "watch": "tsc --watch",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest",
+    "clean": "rimraf ./dist/**/*"
+
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/rm-labo/example-hello-world.git"
   },
   "author": "rm",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/rm-labo/example-hello-world/issues"
   },
   "homepage": "https://github.com/rm-labo/example-hello-world#readme",
   "devDependencies": {
+    "@babel/cli": "^7.10.5",
+    "@babel/core": "^7.11.1",
+    "@babel/plugin-transform-modules-commonjs": "^7.10.4",
+    "@babel/preset-env": "^7.11.0",
+    "@babel/preset-typescript": "^7.10.4",
+    "@types/jest": "^26.0.10",
+    "babel-core": "^6.26.3",
+    "babel-jest": "^26.3.0",
+    "jest": "^26.4.0",
+    "rimraf": "^3.0.2",
+    "ts-jest": "^26.2.0",
     "ts-loader": "^8.0.2",
     "typescript": "^3.9.7"
   },
