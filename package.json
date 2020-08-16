@@ -4,8 +4,7 @@
   "description": "hello!",
   "main": "./dist/js/index.js",
   "scripts": {
-    "prepublish": "npm run lintfix && npm run clean && npm run test && npm run badge && npm run build",
-    "precommit": "npm run prepublish",
+    "precommit": "npm run lintfix && npm run clean && npm run test && npm run badge && npm run build",
     "build": "tsc",
     "watch": "tsc --watch",
     "test": "jest",
