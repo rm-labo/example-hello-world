@@ -4,13 +4,13 @@
   "description": "hello!",
   "main": "./dist/js/index.js",
   "scripts": {
-    "prepublish": "npm run test && npm run clean && npm run build",
+    "prepublish": "npm run clean && npm run test && npm run badge && npm run build",
     "precommit": "npm run prepublish",
     "build": "tsc",
     "watch": "tsc --watch",
     "test": "jest",
+    "badge": "istanbul-badges-readme",
     "clean": "rimraf ./dist/**/*"
-
   },
   "repository": {
     "type": "git",
@@ -31,6 +31,7 @@
     "@types/jest": "^26.0.10",
     "babel-core": "^6.26.3",
     "babel-jest": "^26.3.0",
+    "istanbul-badges-readme": "^1.0.5",
     "jest": "^26.4.0",
     "rimraf": "^3.0.2",
     "ts-jest": "^26.2.0",

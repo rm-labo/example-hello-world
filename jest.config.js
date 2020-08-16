@@ -9,4 +9,12 @@ module.exports = {
   "transform": {
     "^.+\\.(ts|tsx)$": "ts-jest"
   },
+  "collectCoverage": true,
+  "collectCoverageFrom": [
+    "./src/ts/**/*.{js,ts}",
+    "!**/node_modules/**",
+    "!**/vendor/**"
+  ],
+  "coverageDirectory": "coverage",
+  "coverageReporters": ["json-summary"]
 }
