@@ -1,20 +1,16 @@
-const path = require("path")
+import path from 'path'
 const mode = process.env.NODE_ENV
-// cosnt nodeModulesPath = path.join(__dirname, 'node_modules')
 
 module.exports = {
   mode: mode,
   entry: './src/js/index.js',
   output: {
     path: `${__dirname}/dist/js`,
-    filename: "index.js"
+    filename: 'index.js'
   },
   resolve: {
     extensions: ['.ts', '.js'],
-    modules: [
-      path.join(__dirname, 'src'),
-      'node_modules'
-    ]
+    modules: [path.join(__dirname, 'src'), 'node_modules']
   },
   module: {
     rules: [
@@ -29,22 +25,22 @@ module.exports = {
                 [
                   '@babel/preset-env',
                   {
-                    'modules': false,
-                    'useBuiltIns': 'usage',
+                    modules: false,
+                    useBuiltIns: 'usage',
                     // 'useBuiltIns': 'entry',
-                    'debug': true,
-                    'targets': {
-                      'ie': 11,
+                    debug: true,
+                    targets: {
+                      ie: 11
                     },
-                    'forceAllTransforms': true,
-                    'corejs': 3,
-                  },
-                ],
-              ],
-            },
-          },
-        ],
-      },
+                    forceAllTransforms: true,
+                    corejs: 3
+                  }
+                ]
+              ]
+            }
+          }
+        ]
+      }
     ]
   }
 }
