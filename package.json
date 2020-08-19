@@ -3,6 +3,7 @@
   "version": "1.0.7",
   "description": "hello!",
   "main": "./dist/js/index.js",
+  "types": "./dist/js/index.d.ts",
   "scripts": {
     "precommit": "npm run lintfix && npm run clean && npm run test && npm run badge && npm run build",
     "build": "tsc",
